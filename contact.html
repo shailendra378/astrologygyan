@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Astrology Gyan | Get in Touch with Expert Astrologer Adarsh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Astrology Gyan">
+                    <h2>Astrology Gyan</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog & Articles</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                    <li><a href="login.html" class="nav-link login-btn">Login</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>संपर्क करें</h1>
+                <p>आपकी समस्याओं का समाधान पाने के लिए हमसे जुड़ें</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-grid">
+                <div class="contact-option whatsapp-option">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp पर संपर्क करें</h3>
+                    <p>तुरंत जवाब पाने के लिए WhatsApp करें</p>
+                    <a href="https://wa.me/919876543210?text=नमस्कार, मुझे ज्योतिष सलाह चाहिए" class="btn btn-primary whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp करें
+                    </a>
+                </div>
+                <div class="contact-option phone-option">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>फोन पर बात करें</h3>
+                    <p>सीधे बात करने के लिए कॉल करें</p>
+                    <a href="tel:+919876543210" class="btn btn-primary phone-btn">
+                        <i class="fas fa-phone"></i> +91 98765 43210
+                    </a>
+                </div>
+                <div class="contact-option email-option">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>ईमेल भेजें</h3>
+                    <p>विस्तृत जानकारी के लिए ईमेल करें</p>
+                    <a href="mailto:info@astrologygyan.com" class="btn btn-primary email-btn">
+                        <i class="fas fa-envelope"></i> ईमेल करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="main-contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>संपर्क फॉर्म</h2>
+                    <p>नीचे दिए गए फॉर्म को भरें और हम जल्द ही आपसे संपर्क करेंगे</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">पहला नाम *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">अंतिम नाम *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">ईमेल पता *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">मोबाइल नंबर *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">विषय *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">विषय चुनें</option>
+                                <option value="kundali-analysis">कुंडली विश्लेषण</option>
+                                <option value="gemstone-recommendation">रत्न सुझाव</option>
+                                <option value="love-marriage">प्रेम विवाह</option>
+                                <option value="career-finance">करियर और वित्त</option>
+                                <option value="vastu-consultation">वास्तु सलाह</option>
+                                <option value="numerology">अंक ज्योतिष</option>
+                                <option value="general-inquiry">सामान्य पूछताछ</option>
+                                <option value="other">अन्य</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthDate">जन्म तारीख</label>
+                                <input type="date" id="birthDate" name="birthDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="birthTime">जन्म समय</label>
+                                <input type="time" id="birthTime" name="birthTime">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthPlace">जन्म स्थान</label>
+                            <input type="text" id="birthPlace" name="birthPlace" placeholder="शहर, राज्य">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">आपकी समस्या या प्रश्न *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="कृपया अपनी समस्या या प्रश्न विस्तार से बताएं..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredContact">संपर्क का पसंदीदा तरीका</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="phone" checked>
+                                    <span class="radio-custom"></span>
+                                    फोन कॉल
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="whatsapp">
+                                    <span class="radio-custom"></span>
+                                    WhatsApp
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="preferredContact" value="email">
+                                    <span class="radio-custom"></span>
+                                    ईमेल
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredTime">संपर्क का पसंदीदा समय</label>
+                            <select id="preferredTime" name="preferredTime">
+                                <option value="">समय चुनें</option>
+                                <option value="morning">सुबह (9:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">दोपहर (12:00 PM - 4:00 PM)</option>
+                                <option value="evening">शाम (4:00 PM - 8:00 PM)</option>
+                                <option value="night">रात (8:00 PM - 10:00 PM)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkbox-custom"></span>
+                                मैं साप्ताहिक राशिफल और ज्योतिष टिप्स प्राप्त करना चाहता/चाहती हूं
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkbox-custom"></span>
+                                मैं <a href="#" class="terms-link">नियम और शर्तों</a> से सहमत हूं *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> संदेश भेजें
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>संपर्क जानकारी</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>पता</h3>
+                                <p>123, ज्योतिष भवन<br>
+                                अंधेरी पूर्व, मुंबई - 400069<br>
+                                महाराष्ट्र, भारत</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>फोन नंबर</h3>
+                                <p>मुख्य: +91 98765 43210<br>
+                                वैकल्पिक: +91 87654 32109</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>ईमेल पता</h3>
+                                <p>मुख्य: info@astrologygyan.com<br>
+                                सहायता: support@astrologygyan.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h3>कार्य समय</h3>
+                                <p>सोमवार - शनिवार: 9:00 AM - 8:00 PM<br>
+                                रविवार: 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="social-media-section">
+                        <h3>सोशल मीडिया पर फॉलो करें</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link youtube" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-link twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Contact -->
+                    <div class="emergency-contact">
+                        <h3>आपातकालीन संपर्क</h3>
+                        <p>यदि आपको तुरंत सहायता की आवश्यकता है:</p>
+                        <a href="tel:+919876543210" class="emergency-btn">
+                            <i class="fas fa-phone"></i> तुरंत कॉल करें
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">हमारा स्थान</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8267739870393!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29d8b8f8b8b8b!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <h3>दिशा-निर्देश</h3>
+                    <ul>
+                        <li><i class="fas fa-subway"></i> निकटतम मेट्रो: अंधेरी ईस्ट स्टेशन (500 मीटर)</li>
+                        <li><i class="fas fa-train"></i> निकटतम रेलवे स्टेशन: अंधेरी स्टेशन (1 किमी)</li>
+                        <li><i class="fas fa-bus"></i> बस स्टॉप: अंधेरी ईस्ट बस स्टॉप (200 मीटर)</li>
+                        <li><i class="fas fa-car"></i> पार्किंग उपलब्ध: हां, निःशुल्क</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">अक्सर पूछे जाने वाले प्रश्न</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>आप कितने समय में जवाब देते हैं?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हम आमतौर पर 24 घंटे के अंदर सभी संदेशों का जवाब देते हैं। WhatsApp और फोन कॉल का जवाब तुरंत दिया जाता है।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>क्या परामर्श की फीस है?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हां, हमारी सेवाओं की अलग-अलग फीस है। विस्तृत जानकारी के लिए हमारे सर्विसेज पेज देखें या सीधे संपर्क करें।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>क्या ऑनलाइन परामर्श उपलब्ध है?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हां, हम फोन, वीडियो कॉल और WhatsApp के माध्यम से ऑनलाइन परामर्श प्रदान करते हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>कुंडली बनाने के लिए क्या जानकारी चाहिए?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>कुंडली बनाने के लिए आपकी जन्म तारीख, समय और स्थान की सटीक जानकारी आवश्यक है।</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>क्या आप विदेशी ग्राहकों की सेवा करते हैं?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>हां, हम दुनिया भर के ग्राहकों की सेवा करते हैं। ऑनलाइन परामर्श के माध्यम से आप कहीं से भी हमारी सेवा ले सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Astrology Gyan</h3>
+                    <p>Your trusted partner in spiritual guidance and life solutions through ancient Vedic wisdom.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#kundali">Kundali Analysis</a></li>
+                        <li><a href="services.html#gemstone">Gemstone Recommendation</a></li>
+                        <li><a href="services.html#love">Love & Marriage</a></li>
+                        <li><a href="services.html#career">Career & Finance</a></li>
+                        <li><a href="services.html#vastu">Vastu Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-envelope"></i> info@astrologygyan.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Astrology Gyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

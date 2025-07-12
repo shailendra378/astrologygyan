@@ -1,0 +1,38 @@
+{
+  "name": "astrology-gyan",
+  "version": "1.0.0",
+  "description": "Comprehensive Astrology Website with E-commerce and Advanced Features",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server.js",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "stripe": "^13.6.0",
+    "razorpay": "^2.9.2",
+    "nodemailer": "^6.9.4",
+    "axios": "^1.5.0",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  },
+  "keywords": ["astrology", "vedic", "numerology", "vastu", "e-commerce"],
+  "author": "Adarsh - Astrology Gyan",
+  "license": "MIT"
+}

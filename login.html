@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Astrology Gyan | Sign In to Your Account</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Astrology Gyan">
+                    <h2>Astrology Gyan</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog & Articles</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-background">
+            <div class="auth-overlay"></div>
+        </div>
+        
+        <div class="auth-content">
+            <!-- Login Form -->
+            <div class="auth-form-container" id="loginForm">
+                <div class="auth-header">
+                    <h2>स्वागत है</h2>
+                    <p>अपने खाते में लॉगिन करें</p>
+                </div>
+                
+                <form class="auth-form" id="loginFormElement">
+                    <div class="form-group">
+                        <label for="loginEmail">ईमेल पता</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="loginEmail" name="email" placeholder="आपका ईमेल पता" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loginPassword">पासवर्ड</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="loginPassword" name="password" placeholder="आपका पासवर्ड" required>
+                            <button type="button" class="password-toggle" onclick="togglePassword('loginPassword')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember" id="rememberMe">
+                            <span class="checkbox-custom"></span>
+                            मुझे याद रखें
+                        </label>
+                        <a href="#" class="forgot-password" onclick="showForgotPassword()">पासवर्ड भूल गए?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        <i class="fas fa-sign-in-alt"></i> लॉगिन करें
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>या</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="social-btn google-btn" onclick="loginWithGoogle()">
+                        <i class="fab fa-google"></i> Google से लॉगिन करें
+                    </button>
+                    <button class="social-btn facebook-btn" onclick="loginWithFacebook()">
+                        <i class="fab fa-facebook-f"></i> Facebook से लॉगिन करें
+                    </button>
+                </div>
+                
+                <div class="auth-switch">
+                    <p>क्या आपका खाता नहीं है? <a href="#" onclick="showSignupForm()">साइन अप करें</a></p>
+                </div>
+            </div>
+            
+            <!-- Signup Form -->
+            <div class="auth-form-container" id="signupForm" style="display: none;">
+                <div class="auth-header">
+                    <h2>खाता बनाएं</h2>
+                    <p>नया खाता बनाने के लिए जानकारी भरें</p>
+                </div>
+                
+                <form class="auth-form" id="signupFormElement">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">पहला नाम</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="firstName" name="firstName" placeholder="पहला नाम" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">अंतिम नाम</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="lastName" name="lastName" placeholder="अंतिम नाम" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signupEmail">ईमेल पता</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="signupEmail" name="email" placeholder="आपका ईमेल पता" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">मोबाइल नंबर</label>
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="मोबाइल नंबर" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthDate">जन्म तारीख</label>
+                            <div class="input-group">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" id="birthDate" name="birthDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">लिंग</label>
+                            <div class="input-group">
+                                <i class="fas fa-venus-mars"></i>
+                                <select id="gender" name="gender" required>
+                                    <option value="">चुनें</option>
+                                    <option value="male">पुरुष</option>
+                                    <option value="female">महिला</option>
+                                    <option value="other">अन्य</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signupPassword">पासवर्ड</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="signupPassword" name="password" placeholder="पासवर्ड बनाएं" required>
+                            <button type="button" class="password-toggle" onclick="togglePassword('signupPassword')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">पासवर्ड की पुष्टि करें</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="पासवर्ड दोबारा दर्ज करें" required>
+                            <button type="button" class="password-toggle" onclick="togglePassword('confirmPassword')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <span class="checkbox-custom"></span>
+                            मुझे साप्ताहिक राशिफल और ज्योतिष टिप्स भेजें
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" id="terms" required>
+                            <span class="checkbox-custom"></span>
+                            मैं <a href="#" class="terms-link">नियम और शर्तों</a> से सहमत हूं
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        <i class="fas fa-user-plus"></i> खाता बनाएं
+                    </button>
+                </form>
+                
+                <div class="auth-divider">
+                    <span>या</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="social-btn google-btn" onclick="signupWithGoogle()">
+                        <i class="fab fa-google"></i> Google से साइन अप करें
+                    </button>
+                    <button class="social-btn facebook-btn" onclick="signupWithFacebook()">
+                        <i class="fab fa-facebook-f"></i> Facebook से साइन अप करें
+                    </button>
+                </div>
+                
+                <div class="auth-switch">
+                    <p>क्या आपका पहले से खाता है? <a href="#" onclick="showLoginForm()">लॉगिन करें</a></p>
+                </div>
+            </div>
+            
+            <!-- Forgot Password Form -->
+            <div class="auth-form-container" id="forgotPasswordForm" style="display: none;">
+                <div class="auth-header">
+                    <h2>पासवर्ड रीसेट करें</h2>
+                    <p>अपना ईमेल पता दर्ज करें, हम आपको रीसेट लिंक भेजेंगे</p>
+                </div>
+                
+                <form class="auth-form" id="forgotPasswordFormElement">
+                    <div class="form-group">
+                        <label for="resetEmail">ईमेल पता</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="resetEmail" name="email" placeholder="आपका ईमेल पता" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary auth-btn">
+                        <i class="fas fa-paper-plane"></i> रीसेट लिंक भेजें
+                    </button>
+                </form>
+                
+                <div class="auth-switch">
+                    <p><a href="#" onclick="showLoginForm()">लॉगिन पेज पर वापस जाएं</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 id="successTitle">सफल!</h2>
+                <p id="successMessage">आपका खाता सफलतापूर्वक बनाया गया है।</p>
+                <button class="btn btn-primary" onclick="closeSuccessModal()">ठीक है</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTermsModal()">&times;</span>
+            <h2>नियम और शर्तें</h2>
+            <div class="terms-content">
+                <h3>सेवा की शर्तें</h3>
+                <p>Astrology Gyan की सेवाओं का उपयोग करके, आप निम्नलिखित नियमों और शर्तों से सहमत होते हैं:</p>
+                
+                <h4>1. सेवा का उपयोग</h4>
+                <ul>
+                    <li>हमारी सेवाओं का उपयोग केवल व्यक्तिगत और गैर-व्यावसायिक उद्देश्यों के लिए करें</li>
+                    <li>सटीक और पूर्ण जानकारी प्रदान करें</li>
+                    <li>अपने खाते की सुरक्षा की जिम्मेदारी आपकी है</li>
+                </ul>
+                
+                <h4>2. गोपनीयता</h4>
+                <ul>
+                    <li>आपकी व्यक्तिगत जानकारी सुरक्षित रखी जाएगी</li>
+                    <li>जानकारी केवल ज्योतिष सेवाओं के लिए उपयोग की जाएगी</li>
+                    <li>तीसरे पक्ष के साथ जानकारी साझा नहीं की जाएगी</li>
+                </ul>
+                
+                <h4>3. भुगतान और रिफंड</h4>
+                <ul>
+                    <li>सभी भुगतान सुरक्षित गेटवे के माध्यम से किए जाते हैं</li>
+                    <li>सेवा प्रदान करने के बाद रिफंड नहीं दिया जाएगा</li>
+                    <li>तकनीकी समस्या की स्थिति में पूर्ण रिफंड दिया जाएगा</li>
+                </ul>
+                
+                <h4>4. अस्वीकरण</h4>
+                <ul>
+                    <li>ज्योतिष सेवाएं मार्गदर्शन के लिए हैं, निर्णय लेने की जिम्मेदारी आपकी है</li>
+                    <li>चिकित्सा या कानूनी सलाह के लिए संबंधित विशेषज्ञों से संपर्क करें</li>
+                    <li>परिणामों की गारंटी नहीं दी जा सकती</li>
+                </ul>
+                
+                <p>इन नियमों में बदलाव का अधिकार सुरक्षित है। नवीनतम नियम हमारी वेबसाइट पर उपलब्ध होंगे।</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

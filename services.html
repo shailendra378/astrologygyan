@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Astrology Gyan | Professional Astrology Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Astrology Gyan">
+                    <h2>Astrology Gyan</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog & Articles</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="login.html" class="nav-link login-btn">Login</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Astrology Services</h1>
+                <p>Discover your destiny with our comprehensive range of Vedic astrology services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-filter">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="consultation">Consultations</button>
+                <button class="filter-btn" data-filter="analysis">Analysis</button>
+                <button class="filter-btn" data-filter="remedies">Remedies</button>
+                <button class="filter-btn" data-filter="reports">Reports</button>
+            </div>
+
+            <div class="services-grid">
+                <!-- Kundali Analysis -->
+                <div class="service-product" id="kundali" data-category="analysis">
+                    <div class="service-image">
+                        <img src="images/kundali-analysis.jpg" alt="Kundali Analysis">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="kundali-analysis">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Complete Kundali Analysis</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(127 reviews)</span>
+                        </div>
+                        <p>Comprehensive birth chart analysis with detailed predictions, planetary positions, and life guidance.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Complete Birth Chart</span>
+                            <span><i class="fas fa-check"></i> Planetary Analysis</span>
+                            <span><i class="fas fa-check"></i> Life Predictions</span>
+                            <span><i class="fas fa-check"></i> Remedies Included</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹3,500</span>
+                            <span class="current-price">₹2,500</span>
+                            <span class="discount">29% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="kundali-analysis" data-price="2500">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="kundali-analysis">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gemstone Recommendation -->
+                <div class="service-product" id="gemstone" data-category="remedies">
+                    <div class="service-image">
+                        <img src="images/gemstone-recommendation.jpg" alt="Gemstone Recommendation">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="gemstone-recommendation">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Personalized Gemstone Recommendation</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(89 reviews)</span>
+                        </div>
+                        <p>Get personalized gemstone recommendations based on your birth chart and planetary positions.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Birth Chart Analysis</span>
+                            <span><i class="fas fa-check"></i> Gemstone Selection</span>
+                            <span><i class="fas fa-check"></i> Wearing Instructions</span>
+                            <span><i class="fas fa-check"></i> Authenticity Guide</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹2,000</span>
+                            <span class="current-price">₹1,500</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="gemstone-recommendation" data-price="1500">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="gemstone-recommendation">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Love & Marriage Advice -->
+                <div class="service-product" id="love" data-category="consultation">
+                    <div class="service-image">
+                        <img src="images/love-marriage.jpg" alt="Love & Marriage Consultation">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="love-marriage">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Love & Marriage Consultation</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(156 reviews)</span>
+                        </div>
+                        <p>Comprehensive relationship guidance, compatibility analysis, and marriage timing predictions.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Compatibility Analysis</span>
+                            <span><i class="fas fa-check"></i> Marriage Timing</span>
+                            <span><i class="fas fa-check"></i> Relationship Guidance</span>
+                            <span><i class="fas fa-check"></i> Remedies for Love</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹2,500</span>
+                            <span class="current-price">₹2,000</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="love-marriage" data-price="2000">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="love-marriage">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career & Finance -->
+                <div class="service-product" id="career" data-category="consultation">
+                    <div class="service-image">
+                        <img src="images/career-finance.jpg" alt="Career & Finance Consultation">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="career-finance">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Career & Finance Guidance</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(203 reviews)</span>
+                        </div>
+                        <p>Professional guidance for career growth, business decisions, and financial prosperity.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Career Analysis</span>
+                            <span><i class="fas fa-check"></i> Business Guidance</span>
+                            <span><i class="fas fa-check"></i> Financial Planning</span>
+                            <span><i class="fas fa-check"></i> Success Remedies</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹3,000</span>
+                            <span class="current-price">₹2,200</span>
+                            <span class="discount">27% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="career-finance" data-price="2200">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="career-finance">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vastu Consultation -->
+                <div class="service-product" id="vastu" data-category="consultation">
+                    <div class="service-image">
+                        <img src="images/vastu-consultation.jpg" alt="Vastu Consultation">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="vastu-consultation">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Vastu Shastra Consultation</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(94 reviews)</span>
+                        </div>
+                        <p>Transform your living and working spaces with ancient Vastu principles for positive energy.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Home Analysis</span>
+                            <span><i class="fas fa-check"></i> Office Vastu</span>
+                            <span><i class="fas fa-check"></i> Remedial Solutions</span>
+                            <span><i class="fas fa-check"></i> Floor Plan Review</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹2,800</span>
+                            <span class="current-price">₹2,100</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="vastu-consultation" data-price="2100">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="vastu-consultation">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Numerology Reading -->
+                <div class="service-product" id="numerology" data-category="analysis">
+                    <div class="service-image">
+                        <img src="images/numerology.jpg" alt="Numerology Reading">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="numerology-reading">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Complete Numerology Reading</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(76 reviews)</span>
+                        </div>
+                        <p>Discover the power of numbers in your life with comprehensive numerology analysis.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Life Path Number</span>
+                            <span><i class="fas fa-check"></i> Name Analysis</span>
+                            <span><i class="fas fa-check"></i> Lucky Numbers</span>
+                            <span><i class="fas fa-check"></i> Personal Year</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹1,800</span>
+                            <span class="current-price">₹1,300</span>
+                            <span class="discount">28% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="numerology-reading" data-price="1300">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="numerology-reading">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yearly Horoscope Report -->
+                <div class="service-product" data-category="reports">
+                    <div class="service-image">
+                        <img src="images/yearly-horoscope.jpg" alt="Yearly Horoscope Report">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="yearly-horoscope">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Detailed Yearly Horoscope Report</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(112 reviews)</span>
+                        </div>
+                        <p>Comprehensive yearly predictions covering all aspects of life with monthly breakdowns.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> 12-Month Predictions</span>
+                            <span><i class="fas fa-check"></i> Monthly Analysis</span>
+                            <span><i class="fas fa-check"></i> Lucky Periods</span>
+                            <span><i class="fas fa-check"></i> Remedial Measures</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹2,200</span>
+                            <span class="current-price">₹1,800</span>
+                            <span class="discount">18% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="yearly-horoscope" data-price="1800">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="yearly-horoscope">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mangal Dosha Analysis -->
+                <div class="service-product" data-category="analysis">
+                    <div class="service-image">
+                        <img src="images/mangal-dosha.jpg" alt="Mangal Dosha Analysis">
+                        <div class="service-overlay">
+                            <button class="quick-view-btn" data-service="mangal-dosha">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Mangal Dosha Analysis & Remedies</h3>
+                        <div class="service-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(67 reviews)</span>
+                        </div>
+                        <p>Detailed analysis of Mangal Dosha in your horoscope with effective remedial solutions.</p>
+                        <div class="service-features">
+                            <span><i class="fas fa-check"></i> Dosha Detection</span>
+                            <span><i class="fas fa-check"></i> Impact Analysis</span>
+                            <span><i class="fas fa-check"></i> Remedial Solutions</span>
+                            <span><i class="fas fa-check"></i> Marriage Guidance</span>
+                        </div>
+                        <div class="service-pricing">
+                            <span class="original-price">₹1,500</span>
+                            <span class="current-price">₹1,200</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="service-actions">
+                            <button class="btn btn-primary add-to-cart" data-service="mangal-dosha" data-price="1200">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-secondary book-now" data-service="mangal-dosha">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total">0</span></strong>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkout-btn">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content quick-view-content">
+            <span class="close">&times;</span>
+            <div id="quick-view-details">
+                <!-- Quick view content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Astrology Gyan</h3>
+                    <p>Your trusted partner in spiritual guidance and life solutions through ancient Vedic wisdom.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#kundali">Kundali Analysis</a></li>
+                        <li><a href="#gemstone">Gemstone Recommendation</a></li>
+                        <li><a href="#love">Love & Marriage</a></li>
+                        <li><a href="#career">Career & Finance</a></li>
+                        <li><a href="#vastu">Vastu Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-envelope"></i> info@astrologygyan.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Astrology Gyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
